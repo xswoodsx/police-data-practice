@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/policedata.csproj": {}
+  },
+  "projects": {
+    "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/policedata.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/policedata.csproj",
+        "projectName": "policedata",
+        "projectPath": "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/policedata.csproj",
+        "packagesPath": "/Users/swoods/.nuget/packages/",
+        "outputPath": "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/swoods/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

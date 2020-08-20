@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "RBWEPU4Ve6y/N11bDD4Ax36IB4p6LwnPnJaB1yaZY1R8FLRCepA07q7TG5UO6nd4WhnW3WfNHEJaBdMq7Vf93Q==",
+  "success": true,
+  "projectFilePath": "/Users/swoods/Desktop/Desktop – Steven’s Mac/dotnetfiles/policedata/policedata/policedata.csproj",
+  "expectedPackageFiles": [
+    "/Users/swoods/.nuget/packages/bootstrap/4.5.2/bootstrap.4.5.2.nupkg.sha512",
+    "/Users/swoods/.nuget/packages/jquery/3.0.0/jquery.3.0.0.nupkg.sha512",
+    "/Users/swoods/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/swoods/.nuget/packages/popper.js/1.16.1/popper.js.1.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}

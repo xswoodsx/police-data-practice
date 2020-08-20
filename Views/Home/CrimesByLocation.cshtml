@@ -1,0 +1,47 @@
+﻿@*@model IEnumerable<AllCrimeInformation>
+    @{ Layout = "_Layout"; ViewBag.Title = "Get Crimes by location";}
+
+    <h2>Get Crimes by location</h2>
+    <h2>@Model.CrimeTypes</h2>
+    <a asp-action="Index" class="btn btn-sm btn-primary">Back</a>
+    <form method="get">
+        <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            <input class="form-control" name="latitude" />
+            <label for="longitude">Longitude:</label>
+            <input class="form-control" name="longitude" />
+        </div>
+        <div class="text-center panel-body">
+            <button type="submit" class="btn btn-sm btn-primary">Get Crimes</button>
+        </div>
+    </form>
+
+    @if (Model.CrimeTypes != null)
+    {
+        <h2>Cries</h2>
+        <table class="table table-sm table-striped table-bordered m-2">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Location Type</th>
+                    <th>Longitude</th>
+                    <th>Category</th>
+                    <th>Month</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in Model.Crimes)
+                {
+                    <tr>
+                        <td>@r.id</td>
+                        <td>@r.location_type</td>
+                        <td>@r.</td>
+                        <td>@r.longitude</td>
+                        <td>@r.category</td>
+                        <td>@r.month</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }*@

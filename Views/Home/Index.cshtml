@@ -1,0 +1,61 @@
+﻿@model policedata.ViewModel.AllCrimeInformation
+
+@{ Layout = "_Layout"; ViewBag.Title = "Get Crimes by location";}
+
+
+<h2>Get Crimes by location</h2>
+
+<h2>@Model.CrimeTypes</h2>
+<select class="form-control"
+        asp-items="@Model.listItems">
+    <option value="">-- Select --</option>
+</select>
+
+<a asp-action="Index" class="btn btn-sm btn-primary">Back</a>
+<form method="get">
+    <div class="form-group">
+        <label for="latitude">Latitude:</label>
+        <input class="form-control" name="latitude" />
+        <label for="longitude">Longitude:</label>
+        <input class="form-control" name="longitude" />
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Get Crimes</button>
+    </div>
+
+</form>
+@if (Model.CrimeDetails == null)
+{
+    <h2>Loading....</h2>
+}
+
+@if (Model.CrimeDetails != null)
+{
+    <h2>Crimes</h2>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Location Type</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Category</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model.CrimeDetails)
+            {
+
+                <tr>
+                    <td>@r.id</td>
+                    <td>@r.location_type</td>
+                    <td>@r.location.latitude</td>
+                    <td>@r.location.longitude</td>
+                    <td>@r.category</td>
+                    <td>@r.month</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
